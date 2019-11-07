@@ -22,8 +22,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.android.trackmysleepquality.R
 import com.example.android.trackmysleepquality.databinding.FragmentSleepQualityBinding
+import java.lang.reflect.Array.get
 
 /**
  * Fragment that displays a list of clickable icons,
@@ -48,5 +51,8 @@ class SleepQualityFragment : Fragment() {
         val application = requireNotNull(this.activity).application
 
         return binding.root
+
+
+
     }
 }
